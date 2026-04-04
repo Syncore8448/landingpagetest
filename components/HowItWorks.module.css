@@ -1,0 +1,122 @@
+.section {
+  padding: 8rem 1.5rem;
+  background-color: #f8fafc; /* Bardzo delikatne tło dla odróżnienia od sekcji wyżej */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.badge {
+  color: #3b82f6;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.875rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-top: 0.5rem;
+}
+
+/* Stepper Layout */
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Numeracja i Linia */
+.numberWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  background-color: #1e293b; /* Dopasowane do Twojej nowej karty rozwiązania */
+  color: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.25rem;
+  z-index: 2;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover na kroku */
+.step:hover .number {
+  background-color: #3b82f6;
+  transform: translateY(-3px);
+}
+
+.line {
+  height: 2px;
+  background-color: #e2e8f0;
+  flex-grow: 1;
+  margin-left: 1rem;
+  margin-right: -1rem; /* Przesunięcie linii pod kolejny krok */
+}
+
+/* Treść kroku */
+.stepTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+}
+
+.stepDescription {
+  color: #64748b;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* RESPONSYWNOŚĆ (Mobile) */
+@media (max-width: 768px) {
+  .stepper {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .step {
+    flex-direction: row; /* Numer obok tekstu na mobile */
+    gap: 1.5rem;
+  }
+
+  .numberWrapper {
+    width: auto;
+    margin-bottom: 0;
+    align-items: flex-start;
+  }
+
+  .line {
+    display: none; /* Ukrywamy linię poziomą na mobile */
+  }
+
+  .number {
+    flex-shrink: 0;
+  }
+}

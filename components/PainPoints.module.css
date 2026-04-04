@@ -1,0 +1,69 @@
+/* Główne kontenery */
+.section {
+  padding: 4rem 1.5rem;
+  background-color: #f9fafb; /* Bardzo jasny szary, żeby białe karty się odcięły */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 3rem;
+}
+
+/* Siatka kart */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Domyślnie 1 kolumna (Mobile) */
+  gap: 1.5rem;
+}
+
+/* Od wielkości tabletu w górę zmieniamy na 3 kolumny */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+/* Styl pojedynczej karty */
+.card {
+  background-color: #ffffff;
+  padding: 2.5rem 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  
+  /* Podstawowy cień */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 
+              0 2px 4px -1px rgba(0, 0, 0, 0.03);
+              
+  /* Płynne przejście dla animacji */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 👉 Lekka animacja hover (podniesienie karty i wzmocnienie cienia) */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Elementy wewnątrz karty */
+.icon {
+  display: block;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  font-size: 1.125rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin: 0;
+}

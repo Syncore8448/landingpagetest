@@ -1,0 +1,99 @@
+.section {
+  padding: 80px 20px;
+  background: #f9fafb;
+  text-align: center;
+  color: #000;
+}
+
+.heading {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+
+.stats div {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats strong {
+  font-size: 32px;
+  color: #2563eb;
+}
+
+.stats span {
+  font-size: 14px;
+  color: #555;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-style: italic;
+}
+
+.testimonial p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.testimonial span {
+  font-size: 14px;
+  color: #777;
+}
+
+/* LOGOS */
+.logos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 50px;
+}
+
+.logo {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* CTA */
+.cta {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: #1e4ed8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

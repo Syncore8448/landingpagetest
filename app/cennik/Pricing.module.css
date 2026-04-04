@@ -1,0 +1,195 @@
+.main {
+  background-color: #ffffff;
+  padding: 5rem 1.5rem;
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.backLink {
+  color: #64748b;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  transition: color 0.2s;
+}
+
+.backLink:hover {
+  color: #2563eb;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.subtitle {
+  color: #64748b;
+  margin-top: 0.5rem;
+}
+
+/* AUDIT BOX */
+.auditBox {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 24px;
+  padding: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.auditBadge {
+  background: #f59e0b;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.auditFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 2rem;
+}
+
+.auditTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #92400e;
+}
+
+.auditPrices {
+  display: flex;
+  gap: 2rem;
+}
+
+.auditPriceItem {
+  text-align: right;
+}
+
+.auditPriceItem strong {
+  display: block;
+  font-size: 1.5rem;
+  color: #92400e;
+}
+
+.auditPriceItem span {
+  font-size: 0.8rem;
+  color: #b45309;
+}
+
+.auditNote {
+  font-size: 0.8rem;
+  color: #b45309;
+  margin-top: 1.5rem;
+  font-style: italic;
+}
+
+/* PAKIETY */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.popular {
+  border: 2px solid #2563eb;
+  box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.1);
+  transform: translateY(-5px);
+}
+
+.popularBadge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2563eb;
+  color: white;
+  padding: 4px 16px;
+  border-radius: 99px;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.tierName { font-size: 1.5rem; font-weight: 800; text-align: center; }
+.tierSubtitle { text-align: center; color: #64748b; margin-bottom: 1.5rem; }
+
+.priceBox { text-align: center; margin-bottom: 2rem; }
+.amount { font-size: 3rem; font-weight: 800; }
+.currency { color: #64748b; margin-left: 0.5rem; }
+
+.featureList { list-style: none; padding: 0; margin-bottom: 2rem; flex-grow: 1; }
+.featureItem { margin-bottom: 0.75rem; font-size: 0.95rem; display: flex; gap: 0.5rem; }
+.check { color: #10b981; font-weight: bold; }
+
+.limitBox {
+  background: #f8fafc;
+  padding: 0.75rem;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  border: none;
+  font-weight: 700;
+  background: #f1f5f9;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.popular .cta { background: #2563eb; color: white; }
+.cta:hover { opacity: 0.9; }
+
+/* ADDONS */
+.addonsSection { margin-top: 6rem; }
+.sectionTitle { font-size: 1.75rem; margin-bottom: 2rem; text-align: center; }
+.addonsGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 1rem; }
+.addonItem { display: flex; justify-content: space-between; padding: 1.25rem; background: #f8fafc; border-radius: 12px; border: 1px solid #e2e8f0; }
+
+/* MAINTENANCE */
+.maintenanceSection { margin-top: 6rem; background: #f1f5f9; padding: 4rem 2rem; border-radius: 32px; }
+.maintenanceGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.mCard { background: white; padding: 2.5rem; border-radius: 24px; border: 1px solid #e2e8f0; }
+.mCardPremium { background: #1e293b; color: white; border: none; }
+.mCardTitle { font-size: 1.25rem; margin-bottom: 0.5rem; }
+.mPrice { font-size: 2rem; font-weight: 800; color: #2563eb; }
+.mCardPremium .mPrice { color: #38bdf8; }
+.mList { list-style: none; padding: 0; margin-top: 1.5rem; border-top: 1px solid #f1f5f9; padding-top: 1.5rem; }
+.mCardPremium .mList { border-top-color: #334155; }
+.mList li { margin-bottom: 0.5rem; font-size: 0.9rem; opacity: 0.9; }
+
+.footerNotes { margin-top: 5rem; text-align: center; font-size: 0.85rem; color: #94a3b8; line-height: 1.6; }
+
+@media (max-width: 768px) {
+  .auditFlex { flex-direction: column; align-items: flex-start; }
+  .auditPrices { width: 100%; justify-content: space-between; }
+  .addonsGrid { grid-template-columns: 1fr; }
+}
