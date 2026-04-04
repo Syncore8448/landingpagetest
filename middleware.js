@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 export function middleware(req) {
   const basicAuth = req.headers.get('authorization');
   const username = 'Admin';
-  const password = 'Poiuytrewqaz1!';
+  const password = 'Admin123';
 
   // Tworzymy token base64 z loginu i hasła
   const expectedAuth = 'Basic ' + Buffer.from(`${username}:${password}`).toString('base64');
