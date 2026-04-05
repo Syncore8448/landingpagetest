@@ -2,27 +2,49 @@ import styles from './Hero.module.css';
 
 export default function Hero() {
   return (
-    <section className={styles.hero}>
-      <div className={styles.container}>
-        
-        <div className={styles.left}>
-          <h1>
-            Zobacz, jak <span>Apilo</span> automatyzuje Twój e-commerce
-          </h1>
-          
-          <p>
-            Integruj sprzedaż, zarządzaj zamówieniami i oszczędzaj godziny pracy każdego dnia.
-          </p>
+    <section className={styles.heroSection}>
+      {/* TŁO */}
+      <div className={styles.backgroundWrapper}>
+        <img 
+          src="/282.png" 
+          alt="Background" 
+          className={styles.backgroundImage} 
+        />
+        <div className={styles.overlay}></div>
+      </div>
 
-          <a href="#features" className={styles.cta}>
-            Zobacz możliwości
-          </a>
+      {/* TREŚĆ */}
+      <div className={styles.content}>
+        <h1 className={styles.title}>
+          The all-in-one platform <br /> for financial advisers
+        </h1>
+        <p className={styles.subtitle}>
+          AI-powered practice management available now - with integrated 
+          custody and execution launching soon.
+        </p>
+        <div className={styles.ctaWrapper}>
+          <button className={styles.ctaButton}>
+            Get Started For Free
+          </button>
         </div>
+      </div>
 
-        <div className={styles.right}>
-          <img src="/banerek kopia.png" alt="Apilo dashboard" />
+      {/* DASHBOARD MOCKUP */}
+      <div className={styles.mockupContainer}>
+        <div className={styles.mockupImageWrapper}>
+          {/* Desktop */}
+          <img 
+            src="/mockupapilopc.png" 
+            alt="Dashboard Preview Desktop" 
+            className={`${styles.mockupImage} ${styles.desktopOnly}`} 
+          />
+          {/* Mobile */}
+          <img 
+            src="/mockupapilomobile.png" 
+            alt="Dashboard Preview Mobile" 
+            className={`${styles.mockupImage} ${styles.mobileOnly}`} 
+          />
         </div>
-
       </div>
     </section>
   );

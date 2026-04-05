@@ -1,36 +1,47 @@
-import React from 'react';
 import styles from './PricingPreview.module.css';
 
 export default function PricingPreview() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
+
         <div className={styles.content}>
-          <h2 className={styles.title}>Wybierz wdrożenie Apilo dopasowane do Twojego biznesu</h2>
+          <h2 className={styles.title}>
+            Choose the right Apilo implementation
+          </h2>
+
           <p className={styles.description}>
-            Oferujemy pakiety dla małych i średnich sklepów, od szybkiej integracji po pełną automatyzację procesów.
+            From quick integrations to fully automated ecommerce workflows.
           </p>
         </div>
 
         <div className={styles.highlights}>
           <div className={styles.tier}>
-            <strong>Start</strong> – podstawowa integracja
+            <strong>Start</strong>
+            <span>– basic integration</span>
           </div>
-          <div className={styles.divider} aria-hidden="true">|</div>
+
+          <div className={styles.divider}></div>
+
           <div className={styles.tier}>
-            <strong>Standard</strong> – pełna automatyzacja
+            <strong>Standard</strong>
+            <span>– full automation</span>
           </div>
-          <div className={styles.divider} aria-hidden="true">|</div>
+
+          <div className={styles.divider}></div>
+
           <div className={styles.tier}>
-            <strong>Indywidualny</strong> – dedykowane wdrożenie
+            <strong>Custom</strong>
+            <span>– dedicated implementation</span>
           </div>
         </div>
 
         <div className={styles.action}>
           <a href="/cennik" className={styles.ctaButton}>
-            Zobacz wszystkie pakiety
+            View full pricing
           </a>
         </div>
+
       </div>
     </section>
   );

@@ -2,32 +2,32 @@
   position: relative;
   width: 100%;
   padding: 120px 24px;
-  background-color: #0D0D0D;
+  background-color: #0d0d0d;
   overflow: hidden;
 }
 
-/* Lekki gradient blend z poprzednią sekcją */
+/* Subtelne przejście z hero */
 .section::before {
   content: "";
   position: absolute;
-  top: -120px;
+  top: -120px; /* KLUCZOWE */
   left: 0;
   width: 100%;
   height: 140px;
   background: linear-gradient(
     to bottom,
     transparent,
-    #0D0D0D
+    #0d0d0d
   );
   pointer-events: none;
   z-index: 1;
 }
 
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
   position: relative;
   z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /* HEADER */
@@ -67,61 +67,45 @@
 /* GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
 }
 
-/* CARD */
-.card {
+/* TILE */
+.tile {
+  aspect-ratio: 1 / 1;
   background: #151515;
   border-radius: 16px;
-  padding: 28px;
   border: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
   transition: all 0.3s ease;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeUp 0.6s ease forwards;
 }
 
-.card:hover {
-  transform: translateY(-6px);
+.tile:hover {
+  transform: translateY(-4px) scale(1.05);
   border-color: rgba(255,255,255,0.2);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
-/* NUMBER */
-.number {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-weight: 600;
-  margin-bottom: 16px;
+/* LOGO */
+.logo {
+  max-width: 70%;
+  max-height: 40px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(1.2);
+  opacity: 0.8;
   transition: all 0.3s ease;
 }
 
-.card:hover .number {
-  background: #ffffff;
-  color: #000000;
-}
-
-/* TEXT */
-.stepTitle {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.stepDescription {
-  color: rgba(255,255,255,0.7);
-  line-height: 1.6;
-  font-size: 0.95rem;
+.tile:hover .logo {
+  filter: grayscale(0%) brightness(1);
+  opacity: 1;
 }
 
 /* ANIMACJA */
@@ -139,13 +123,13 @@
 /* RESPONSYWNOŚĆ */
 @media (max-width: 1024px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (max-width: 640px) {
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .title {
