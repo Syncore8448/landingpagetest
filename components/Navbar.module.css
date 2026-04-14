@@ -70,6 +70,7 @@
   font-weight: 500;
 }
 
+
 .logoIcon {
   font-size: 18px;
   opacity: 0.8;
@@ -114,6 +115,8 @@
 .cta:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+
+
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
