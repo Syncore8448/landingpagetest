@@ -10,7 +10,6 @@
   padding: 100px 24px 0 24px; /* Miejsce na Header */
   background-color: #0d0d0d;
   overflow: hidden;
-    padding-bottom: 80px;
 }
 
 /* Stylizacja tła */
@@ -30,8 +29,14 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, transparent 40%, #0d0d0d 100%);
   z-index: 1;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(13,13,13,0.7) 0%,
+    rgba(13,13,13,0.4) 40%,
+    #0d0d0d 100%
+  );
 }
 
 /* Tekst i przycisk */
@@ -102,10 +107,14 @@
 }
 
 .mockupImage {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   object-position: top;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 /* Pokazujemy tylko odpowiedni obrazek */

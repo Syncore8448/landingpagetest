@@ -23,23 +23,5 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
-
-/* === GLOBAL SECTION SYSTEM === */
-
-.sectionGlow {
-  position: relative;
-  height: 1px;
-  margin: 100px 0;
-}
-
-.sectionGlow::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 300px;
-  height: 1px;
-  background: rgba(255,255,255,0.25);
-  filter: blur(6px);
+  
 }

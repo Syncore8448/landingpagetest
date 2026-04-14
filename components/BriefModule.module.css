@@ -1,0 +1,157 @@
+.section {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+  color: white;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.cta {
+  background: linear-gradient(135deg, #6c63ff, #5a54e8);
+  padding: 14px 28px;
+  border-radius: 14px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+}
+
+/* MODAL */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background: #0f0f0f;
+  width: 100%;
+  max-width: 800px;
+  height: 90vh;
+  border-radius: 20px;
+  padding: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* PROGRESS */
+
+.progress {
+  height: 4px;
+  background: #222;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.bar {
+  height: 100%;
+  background: linear-gradient(90deg, #6c63ff, #5a54e8);
+  border-radius: 10px;
+}
+
+/* CONTENT */
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.question {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* INPUT */
+
+.input {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  background: #111;
+  color: white;
+  font-size: 16px;
+}
+
+/* GRID OPTIONS */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 14px;
+  background: #151515;
+  border: 1px solid #2a2a2a;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.card:hover {
+  background: #1f1f1f;
+  transform: scale(1.03);
+}
+
+/* NAV */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.next {
+  background: linear-gradient(135deg, #6c63ff, #5a54e8);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.back {
+  background: none;
+  border: 1px solid #444;
+  padding: 12px 24px;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+}

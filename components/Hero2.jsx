@@ -1,17 +1,15 @@
-import styles from './Hero.module.css';
+import styles from './Hero2.module.css';
+import HeroBackground from '@/components/HeroBackground';
 
 export default function Hero() {
   return (
     <section className={styles.heroSection}>
-      {/* TŁO */}
-      <div className={styles.backgroundWrapper}>
-        <img 
-          src="/282.png" 
-          alt="Background" 
-          className={styles.backgroundImage} 
-        />
-        <div className={styles.overlay}></div>
-      </div>
+      
+      {/* 🔥 CANVAS TŁO */}
+      <HeroBackground />
+
+      {/* 🔥 OVERLAY (dla czytelności tekstu) */}
+      <div className={styles.overlay}></div>
 
       {/* TREŚĆ */}
       <div className={styles.content}>
@@ -29,19 +27,17 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* DASHBOARD MOCKUP */}
+      {/* MOCKUP */}
       <div className={styles.mockupContainer}>
         <div className={styles.mockupImageWrapper}>
-          {/* Desktop */}
           <img 
             src="/mockupapilopc.png" 
-            alt="Dashboard Preview Desktop" 
+            alt="Desktop" 
             className={`${styles.mockupImage} ${styles.desktopOnly}`} 
           />
-          {/* Mobile */}
           <img 
             src="/mockupapilomobile.png" 
-            alt="Dashboard Preview Mobile" 
+            alt="Mobile" 
             className={`${styles.mockupImage} ${styles.mobileOnly}`} 
           />
         </div>

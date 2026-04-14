@@ -4,7 +4,7 @@ const integrations = [
   'allegro',
   'amazon',
   'shopify',
-  'baselinker',
+  'shoper',
   'apilo',
   'inpost',
   'dpd',
