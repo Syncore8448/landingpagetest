@@ -21,8 +21,8 @@ export default function Navbar() {
       <div className={styles.navbar}>
         <div className={styles.logo}>
            <Image
-              src="/syncorelogo.png"
-              alt="Apilo logo"
+              src="/logo.png"
+              alt="Syncore"
               width={150}
               height={150}
            />
