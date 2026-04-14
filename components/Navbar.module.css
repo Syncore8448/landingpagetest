@@ -26,7 +26,7 @@
 /* ===== SCROLLED STATE ===== */
 .scrolled {
   position: fixed;
-  top: 10px;
+  top: 0px;
 }
 
 /* ===== NAVBAR BASE ===== */
